@@ -1,0 +1,406 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Tercera Aplicacion </title>
+
+<!-- grupo CSS -->
+<link rel="stylesheet" href="css/app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!-- grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<!------ imagen de sustitucion -------->
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body>
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1> VOLCANES </h1>
+   </div>
+   <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false" align="center">
+        <h1> ¿Qué es un Volcan? </h1>
+         <div>
+         <p> Es un lugar donde salen materiales calientes(lava, ceniza, rocas, gases, vapores) de interior de la Tierra. Parte de estos materiales seacumulan alrededor del lugar de salida, formando cerros o montañas que llegan a alcanzar grandes alturas.
+         <br>
+         Los materiales calientes pueden salir pro grietas o por el cráter, que es un orificio en la parte superior del cerro o montaña volciánica, formado por eruopciones anteriores.
+         <div data-role="collapsible" data-content-theme="false" align="center">
+       <h2> Partes de un Volcan </h2>
+        <div>
+        <h3> CRÁTER </h3>
+        Es la puerta de salida de los materiales del volcán. es la abertura que está al final de la chimenea, el cráter puede ser de forma circular, ovalado, etc.
+        <p></p>
+        <h3> CHIMENEA </h3>
+Es en conducto por donde sale el magma hacia al exterior
+        <p></p>
+        <h3> CONO VOLCÁNICO </h3>
+        Parte del volcán formada por los materiales que expulsados, tiene forma de cono.
+        <p></p>
+        <h3> CÁMARA MAGMÁTICA </h3>
+        Lugar donde esta acumulado el magma antes de salir
+        <p></p>
+        <h3>  FUMAROLAS </h3>
+        Son emisiones de gases de las lavas en los cráteres.
+        <p></p>
+        <h3>  SOLFATARAS </h3>
+        Son emisiones de vapor de agua y ácido sulfhídrico.
+        <p></p>
+        <h3>  MOFETAS </h3>
+        Son fumarolas frías que desprenden dióxido de carbono
+        <p></p>
+        <h3>  GÉISERES </h3>
+        Son pequeños volcanes de vapor de agua hirviendo
+        <p></p>
+        
+<a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2','','imagenes/partes_volcan.jpg',1)"><img src="imagenes/Estructura del volcan.jpg" width="556" height="508" id="Image2" /></a>
+        </div> 
+     </div>
+          </p>
+         </div>
+     </div>
+     
+
+     <div data-role="collapsible" data-content-theme="false" align="center">
+       <h1> Tipos de Volcanes </h1>
+        <div>
+        Los volcanes se clasifican atendiendo al tipo de erupción que presentan:
+        <br>
+        <h3> Tipo Hawaiano </h3>
+        Son volcanes de erupción tranquila, debido a que la lava es muy fluida. Los gases se desprenden fácilmente y no se producen explosiones. El volcán que se forma tiene apariencia de escudo, ya que la lava, al ser muy fluida cubre una gran extensión antes de solidificarse.
+        <p></p>
+        <h3> Tipo Estromboliano </h3>
+        Son volcanes con erupciones violentas. La lava es viscosa, no se desliza fácilmente y forma pequeños conos volcánicos donde se producen explosiones con lanzamiento de lapilli y cenizas volcánicas. Las lavas pueden recorrer 12 km antes de solidificarse.
+        <p></p>
+        <h3> Tipo Vulcaniano o Vesubiano </h3>
+        Son volcanes con erupciones muy violentas. Las lavas son muy viscosas y se solidifican en la zona del cráter, produciéndose explosiones que, incluso, llegan a demoler la parte superior del cono volcánico.
+        <p></p>
+        <h3> Tipo Peleano </h3>
+        Volcanes con erupciones extremadamente violentas. La lava tiene una altísima viscosidad. Por ello, la chimenea del volcán se obstruye al solidificarse la lava. Los gases se acumulan en la cámara magmática, incrementando la presión, por lo que termina explotando todo el aparato volcánico. El más famoso de estos volcanes fue el situado en la isla de Krakatoa. Esta isla casi desapareció después de la erupción del volcán.
+        <br>
+        <p></p>
+        <iframe src="visor/indexwow.html" style="width:812px;height:615px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+       
+        </div> 
+     </div>
+    <div data-role="collapsible" data-content-theme="false" align="center">
+      <h1> Tipos de erupciones volcánicas </h1>
+      La temperatura, composición, viscosidad y elementos disueltos en el magma son los factores que determinan el tipo de erupción y la cantidad de productos volátiles que la acompañan.
+     <p></p>
+     <h3> Hawaiana </h3>
+     En este tipo de erupción, la lava generalmente es bastante fluida y no ocurren desprendimientos gaseosos explosivos. Estas lavas se desbordan cuando rebasan el cráter y se deslizan con facilidad por la ladera del volcán, formando verdaderas corrientes que recorren grandes distancias. Por esta razón, los volcanes de tipo hawaiano son de pendiente suave. Algunos residuos de lava, al ser arrastrados por el viento, forman hilos cristalinos que los nativos hawaianos llaman cabellos de la diosa Pelé, la diosa del fuego. El volcán hawaiano más famoso es el Kilauea.
+     <p></p>
+     <h3> Estromboliana o mixta </h3>
+     Este tipo de erupción recibe el nombre del Estrómboli, volcán de las islas Eolias (mar Tirreno), al norte de Sicilia. Se origina cuando hay alternancia de los materiales en erupción, formándose un cono estratificado en capas de lavas fluidas y materiales sólidos. La lava es fluida, desprende gases abundantes y violentos con proyecciones de escorias, bombas y lapilli. Debido a que los gases pueden desprenderse con facilidad, no se producen pulverizaciones o cenizas. Cuando la lava rebosa por los bordes del cráter, desciende por las laderas y barrancos, pero no alcanza grandes extensiones como en las erupciones de tipo hawaiano.
+     <p></p>
+     <h3> Vulcaniana </h3>
+     Del nombre del volcán Vulcano en las islas Lipari. Esta erupción se caracteriza porque en ella se desprenden grandes cantidades de gases, la lava liberada es poco fluida y se consolida con rapidez. En este tipo de erupción, las explosiones son muy fuertes y pulverizan la lava, produciendo mucha ceniza, la cual es lanzada al aire acompañada de otros materiales fragmentarios. Cuando el magma sale al exterior en forma de lava, se solidifica rápidamente, pero los gases que se desprenden rompen y resquebrajan su superficie, volviéndola áspera y muy irregular y formando lava de tipo Aa. Los conos de estos volcanes son de pendiente muy inclinada
+     <p></p>
+     <h3> Pliniana o vesubiana </h3>
+     Nombrada así en honor a Plinio el Joven, difiere de la erupción vulcaniana en que en ésta la presión de los gases es muy fuerte y produce explosiones muy violentas. Forma nubes ardientes que, al enfriarse, generan precipitaciones de cenizas, las cuales pueden llegar a sepultar ciudades, como ocurrió con Pompeya y Herculano por la actividad del volcán Vesubio.
+     <br>
+Se caracteriza por alternar erupciones de piroclasto con erupciones de coladas lávicas, dando lugar a una superposición en estratos, lo que hace que este tipo de volcanes alcancen grandes dimensiones. Otros volcanes de tipo pliniano son el Teide, el Popocatépetl y el Fujiyama.
+     <p></p>
+     <h3> Freatomagmática o surtseyana </h3>
+     Los volcanes de tipo freato-magmático se encuentran en aguas someras, presentan un lago en el interior de su cráter y en ocasiones forman atolones. Sus erupciones son extraordinariamente violentas, ya que a la energía propia del volcán se le suma la expansión del vapor de agua súbitamente calentado. Normalmente no presentan emisiones lávicas ni extrusiones de rocas. Algunas de las mayores erupciones freáticas son las del Krakatoa, el Kīlauea y la Isla de Surtsey.
+     <p></p>
+     <h3> Peleana </h3>
+     De los volcanes de las Antillas es célebre la Montaña Pelada, ubicada en la isla Martinica, que en la erupción de 1902 destruyó la capital, Saint-Pierre.
+     <br>
+La lava en esta erupción es extremadamente viscosa y se consolida con gran rapidez, llegando a tapar por completo el cráter formando un pitón o aguja. La enorme presión de los gases sin salida provoca una enorme explosión que levanta el pitón, o bien destroza la parte superior de la ladera. Así ocurrió el 8 de mayo de 1902, cuando las paredes del volcán cedieron a tan enorme empuje que se abrió un conducto por el que salieron con extraordinaria fuerza los gases acumulados a elevada temperatura y que, mezclados con cenizas, formaron una nube ardiente que ocasionó 28 000 víctimas.
+     <p></p>
+     <h3> Erupciones submarinas </h3>
+     En el fondo oceánico se producen erupciones volcánicas cuyas lavas pueden formar islas volcánicas si llegan a la superficie. Las erupciones suelen ser de corta duración en la mayoría de los casos, debido al equilibrio isostático de las lavas al enfriarse cuando entran en contacto con el agua y también por la erosión marina. Algunas islas como las Cícladas en Grecia o Las Islas Canarias en España tienen este origen.
+     <p></p>
+     <h3> Avalanchas de origen volcánico </h3>
+     Hay volcanes que generan un número de víctimas elevado, debido a que sus grandes cráteres están durante el periodo de reposo convertidos en lagos o cubiertos de nieve. Al recobrar su actividad, el agua mezclada con cenizas y otros restos, es lanzada formando torrentes y avalanchas de barro que tienen una enorme capacidad destructiva. Un ejemplo de esto fue la erupción del Nevado de Ruiz en Colombia, el 13 de noviembre de 1985. El Nevado del Ruiz es un volcán explosivo en el que la cumbre del cráter (5321 msnm) estaba recubierta por un casquete de hielo; al ascender la lava se recalentaron las capas de hielo y se formaron unas coladas de barro que invadieron el valle del río Lagunilla, sepultando la ciudad de Armero, dejando 24 000 muertos y decenas de miles de heridos
+     <p></p>
+     <h3> Erupciones fisurales </h3>
+     Se originan en una larga dislocación de la corteza terrestre, que puede ser desde apenas unos metros hasta varios kilómetros. La lava que fluye a lo largo de la rotura es fluida y recorre grandes extensiones formando amplias mesetas, con 1 o más kilómetros de espesor y miles de km. Un ejemplo de vulcanismo fisural es la meseta del Decán en la India.
+   </div>
+  </div>        
+<div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2> Popocatepetl </h2>
+       <p> Muestra como información del volcan Popocatepetl </p>
+       </a>
+      </li>
+     <li class="ui-fist-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2> Monte Fuji </h2>
+       <p> Muestra Informacion sobre el volcan de Japon </p>
+       </a>
+      </li>
+     <li class="ui-fist-child ui-last-child">
+        <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> Kīlauea </h2>
+        <p> Muestra informacion sobre uno de los volcanes de Hawai </p>
+       </a>
+    </li>
+   </ul>
+</div>
+
+<div data-role="footer" align="center" data-theme="a">
+    <div>
+       <img src="imagenes/Mountain_icon.png" width="46" height="46">
+    </div>
+    <div>
+       <h4>Aplicacion Tres</h4>
+       <h4>Xel-ha Lozada Lopez</h4>
+    </div>
+</div>
+</div>
+<!------ Popocatepetl ---------->
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Popocatepetl</h1>
+  </div>
+  <div  data-role="content" align="center">
+    <div>
+    <p></p>
+    Por su origen náhuatl su nombre significa “montaña que humea”, por su altura es el pico más alto de México después del Pico de Orizaba, y por su cercanía con varias poblaciones humanas se le considera uno de los volcanes más peligrosos del mundo. También se le conoce  como “Don Goyo” o simplemente como “Popo”.
+    <br>
+    El Popocatépetl es un estratovolcán o volcán compuesto. Se le describe como un volcán activo, de hecho, el más activo de México. Descansa al sur de la Ciudad de México sobre los estados de Puebla, Morelos y México, en una provincia fisiográfica nombrada Eje Neovolcánico o Eje Volcánico Transversal, que es una cadena de volcanes que incluye al Iztaccíhuatl, al Paricutín y al Nevado de Toluca, entre otros.
+     <div data-role="collapsible" data-content-theme="false" align="center">
+       <h1> Caracteristicas Generales </h1>
+        <div>
+        <h3> Tamaño </h3>
+        Es un volcán de forma cónica simétrica.
+Su altura sobre el nivel del mar es de 5,452 m.(17,887 pies).
+El cráter en la parte más ancha mide 612 m. y en la más angosta 400 m. Tiene una profundidad máxima de 505 m. y es el vértice donde limitan tres estados: México, Puebla y Morelos.
+Las dos principales cimas del Popo son el Pico Mayor y el Espinazo del Diablo, ambos alrededor del cráter.
+Es el segundo volcán más alto de nuestro país; el primero lo ocupa el Pico de Orizaba o Citlaltépetl con 5,747 m. y el tercero el Iztaccíhuatl o Ixtaccíhualtl ( Con quien esta unido por la parte norte mediante un paso montañoso conocido como Paso de Cortés) con 5,286 m. de altura.
+        <p></p>
+        <h3> Antiguedad </h3>
+        El Popocatépetl es un volcán geológicamente joven. Se cree que tiene unos 730,000 años de antigüedad y que es remanente de volcanes antiguos que colapsaron. Su historia comenzó con la formación del volcán Nexpayantla a través de la expulsión de flujos de lava andesítica y dacítica. Años después, este volcán colapsó y en consecuencia se formó una caldera, es decir, una depresión amplia y profunda debajo de la cual se halla una cámara de magma.
+        <br>
+        El cono de un nuevo volcán, Ventorrillo, emergió entonces, pero este experimentó un colapso hace aproximadamente 23,000 años. Posteriormente empezó a emerger el volcán El Fraile, pero al cabo de un tiempo terminó por colapsar también debido a una fuerte erupción, tras lo cual el lado sur del cono quedó destruido.
+        <br>
+El moderno Popocatépetl tuvo su origen durante el Pleistoceno tardío-Holoceno, después del derrumbe de El Fraile. El cono perteneciente a Don Goyo se formó paulatinamente hasta adquirir un tamaño significativo, pero produjo una fuerte erupción que hizo colapsar un lateral del cono y generar una avalancha de depósitos que cubrió la superficie. Al menos 4 avalanchas subsecuentes contribuyeron a formar el moderno cono.
+        <p></p>
+        <h3> Localización </h3>
+        El Popocatépetl esta ubicado en los estados de Morelos, Puebla (45 kilometros) y el Estado de México( a 55 kilometros). Al sur de la Sierra Volcánica Transversal que constituye la espina dorsal del Altiplano Mexicano.
+
+En el Estado de México colinda con los municipios: Tlamanalco, Amecameca, Atlauta y Ecatzingo.
+
+Con el estado de Morelos colinda específicamente con el municipio de Tetela del Volcán.
+
+Por la parte de Puebla colinda con Huejotzingo, San Salvador el Verde, Domingo Arenas, San Nicolás de los Ranchos y Tochimilco.
+        <p></p>
+        <h3> Actividad Volcanica </h3>
+        Ha tenido por lo menos cuatro erupciones explosivas que colapsaron el cono, dando como resultado enormes derrumbes prehistóricos de enormes proporciones.
+        <br>
+Hace 14,000 años ocurrió una gran erupción que produjo abundantes lluvias de ceniza y piedra pómez. Durante los siguientes12 milenios han sucedido por lo menos seis grandes erupciones explosivas. La última gran erupción ocurrió aproximadamente entre los años 800 y 1,000 de nuestra era.
+        <br>
+        <ul>
+         <li> 1363 Comienza a humear. </li>
+         <li> 1519 y 1528 arroja humo, cenizas y piedras incandescentes. </li>
+         <li> 1530 produce solo humo. </li>
+         <li> 1539 lanza grandes llamas, piedras y cenizas. </li>
+         <li> 1570 Para este año incrementó la actividad sísmica. </li>
+         <li> 1571 Arrojó gran cantidad de cenizas. </li>
+         <li> 1592 Arrojó vapores y cenizas. </li>
+         <li> 1663 Arroja gran cantidad de ceniza y con ella piedras pómez. </li>
+         <li> 1665 Estuvo arrojando cenizas por varios días. </li>
+         <li> 1697 Hizo una erupción de fuego. </li>
+         <li> 1720 Registró una nueva erupción. </li>
+         <li> 1790, 1802 y 1804 Arrojaba una columna de humo. </li>
+         <li> 1919: La erupción registrada en este año fue considerada por algunos como consecuencia de una explosión de dinamita provocada para la extracción de azufre. Los orígenes de esta actividad la inició Hernán Cortés en 1519 cuando mandó a Diego de Ordaz a que subiera el Popo pero no logró alcanzar el cráter; en cambio al año siguiente otros soldados sacaron azufre para fabricar pólvora. </li>
+         <li> En 1947 ocurrió una erupción de consideración, para iniciar así un periodo de actividad. </li>
+         <li> A lo largo de 1992 y 1993 aumentaron las fumarolas y los microsismos. </li>
+         <li> 21 de diciembre de 1994 registró una explosión que produjo gas y cenizas que fueron transportados por los vientos dominantes, llegando llegaron más allá del Estado de Puebla. Cabe señalar que en este año los monasterios del siglo XVI construidos en las laderas del volcán, fueron declarados Patrimonio de la Humanidad por la UNESCO. </li>
+         <li> 1995 Registro una actividad fluctuante. </li>
+         <li> Marzo de 1996: En esta año aumentó la actividad y se formó un domo en el cráter. </li>
+         <li> 30 de abril de 1996, El popo lanza una lluvia de piedras incandescentes, provocando la muerte de cinco expertos alpinistas que exploraban el volcán. Durante este año también se registraron varios microsismos. </li>
+         <li> El 30 de junio de 1997 lanzó una fumarola de 8 kilómetros de altura y 50 kilómetros de diámetro. </li>
+         <li> 25 de diciembre de 2005: Se produjo una nueva explosión que provocó una columna de humo y cenizas de tres kilómetros de altura y la expulsión de lava.. </li>
+        </ul>
+        <p></p>
+        <h2> Estados que afectaria </h2>
+        Mexico, Morelos y Puebla
+        </div> 
+     </div>
+     
+     <!------- Monitoreo ------>
+     <div data-role="collapsible" data-content-theme="false" align="center">
+       <h1> Monitoreo Volcánico </h1>
+        <div>
+         <br>
+         El monitoreo o vigilancia consiste en la observación continua y permanente del volcán por medio de instrumentación especializada. El monitoreo volcánico implica el reconocimiento e interpretación de los cambios que ocurren durante una reactivación, es decir de los "precursores" o anomalías respecto a los niveles de referencia. El aspecto más importante del monitoreo es que es continuo, así, al detectar una anomalía, se pueden implementar los dispositivos de respuesta, esto es, alertar a los sistemas de Protección Civil.
+         <br>
+        <div data-role="collapsible" data-content-theme="false" align="center">
+         <h1> Las principales formas de monitoreo </h1>
+          <h3>VIGILANCIA VISUAL</h3>
+          Involucra monitoreo continuo por medio de una cámara de televisión situada cerca del volcán que transmite al CENAPRED y reconocimientos visuales frecuentes desde tierra o desde el aire.
+          <p></p>
+          <h3> MONITOREO SISMICO </h3>
+          Consiste en una red de estaciones sismológicas situadas sobre y alrededor del volcán, enlazadas por radiotelemetría, como el centro de recepción y procesamiento de la información en el CENAPRED. Estas estaciones provéen información fundamental sobre la estructura interna del Popocatépetl, el estado en que se encuentra y la forma como éste cambia. La sismicidad es él más claro reflejo del estado interno de un volcán. La forma como evolucionan los patrones sísmicos ha sido el factor de vigilancia y evaluación del riesgo más importante en el estudio de erupciones pasadas en diversos países.
+          <p></p>
+          <h3> MONITOREO GEODESICO </h3>
+          Consiste en redes de estaciones monumentadas, puntos de observación, e inclinómetros para detectar y medir deformaciones del edificio volcánico. Las medidas se hacen en el campo por métodos geodésicos convencionales (nivelación, triangulación, trilateración, inclinometría, etc.) y por métodos electrónicos (radiotelemetría de datos de los inclinómetros electrónicos). Se efectúan las mediciones de campo tan frecuentemente como es posible, y los inclinómetros transmiten en forma continua al CENAPRED. Estos datos provéen de información fundamental sobre las condiciones de presión en el interior del volcán y sobre la posibilidad de alimentación de nuevo magma desde la profundidad.
+          <p></p>
+          <h3> MONITOREO GEOQUIMICO </h3>
+          Análisis químico frecuente de la fumarola (por espectrometría de correlación (COSPEC) y por Li-Cor, para determinación de la concentración de Bíoxido de Azufre y Bíoxido de Carbono respectivamente en la pluma que emana del cráter. Muestreo frecuente de manantiales para análisis de la influencia de la actividad del volcán y de las cenizas emitidas sobre el agua. El monitoreo geoquímico provée información importante del estado interno del volcán, de su potencial eruptivo y de los efectos que pueden tener sus productos
+          Para saber mas acerca del momnitoreo del Popocatepetl da click en la siguiente imagen:
+       <br>
+       <p><a href="http://www.cenapred.unam.mx/es/"><img src="imagenes/monitoreo_del_volcan_popocatepetl.jpg" width="500" height="300" alt="Imagen monitoreo volcanico" /></a></p>
+       </div> 
+      </div>
+     </div>
+     <div data-role="collapsible" data-content-theme="false" align="center">
+       <h1> Medidas de Prevencion </h1>
+       <p>
+        <h2> Caida de Ceniza </h2>
+        <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','imagenes/ceniza_recomendaciones.jpg',1)"><img src="imagenes/Prevencion_Volcanes.jpg" width="556" height="508" id="Image4" /></a>
+        <p></p>
+        <h2> Erupcion Volcanica </h2>
+        <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','imagenes/produccin_y_desarrollo_sustentable.jpg',1)"><img src="imagenes/Erupcion_volcanica.jpg" width="556" height="508" id="Image3" /></a>
+       </p>
+      </div>
+    </div>
+   </div>
+  
+   <div data-role="footer" data-theme="a">
+       <h4>Aplicacion Tres, Lozada López Xel-ha</h4>
+   </div>
+ </div>
+</div>
+ 
+<!------- Monte Fuji -------------->
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Monte Fuji</h1>
+  </div>
+ <div data-role="content" align="center">
+    <div>
+       <p>
+        El monte Fuji es el pico más alto de la isla de Honshu y de todo Japón. Se encuentra entre las prefecturas de Shizuoka y Yamanashi en el Japón central y justo al oeste de Tokio, desde donde se puede observar en un día despejado. El Fuji es un volcán compuesto y es el símbolo de Japón.
+        <br>
+        Considerado sagrado desde la Antigüedad, les estaba prohibido a las mujeres llegar a la cima hasta la era Meiji (finales del s. XIX). Actualmente es un conocido destino turístico, así como un destino popular para practicar el alpinismo. La temporada “oficial” para practicar el alpinismo dura desde principios de julio hasta finales de agosto. Son mayoría los que escalan por la noche para apreciar la salida del sol.
+       </p>
+     <div data-role="collapsible" data-content-theme="false" align="center">
+       <h1> Caracteristicas Generales </h1>
+        <div>
+        <h2> Tamaño </h2>
+         El monte Fuji con 3.776 metros de altitud, es el pico más alto de la isla de Honshu y de todo Japón.
+         <p></p>
+         <h2> Localizacion </h2>
+         El monte Fuji se encuentra en el centro del Japón, en la isla principal, Honshu, rodeado por los Alpes Japoneses al noroeste y por el océano Pacífico al sudeste. Administrativamente, se extiende por las prefecturas de Shizuoka al sur y Yamanashi al norte. La cumbre se encuentra a 3.776 metros de altura, por lo que es el punto más alto de Japón y en ciertos días se puede ver Tokio situado a 100 kilómetros al nordeste.
+
+Está rodeado por los cinco lagos Fujigoko: el lago Motosu, el lago de Shoji, el lago Sai, el lago Kawaguchi y el lago Yamanaka. Estos lagos, así como el lago Ashi ofrecen una vista excepcional del volcán. A sus pies se encuentra el bosque Aokigahara y ciudades como Gotenba en el este, Fujiyoshida al norte y Fujinomiya al suroeste conectado con el resto de la megalópolis de Tokio que se encuentra al nordeste por una densa red de comunicación que consisten en carreteras y una pequeña parte en trenes bala shinkansen.
+         
+         <p></p>
+         <h2> Actividad Volcanica </h2>
+         Después de la fase del "viejo Fuji", un período de inactividad de 4.000 años y que acabó hace 5.000 con la actual fase del "nuevo Fuji". Las erupciones del monte Fuji presentan corrientes de lava, emisiones de magma, de escorias y de ceniza volcánica, además de derrumbamientos y de las erupciones laterales, de donde viene el calificativo de «gran almacén de erupciones». Las cenizas del nuevo Fuji son a menudo negras y sus erupciones son recientes en términos de capas geológicas. Informaciones precisas se encuentran relatadas en los documentos históricos japoneses del siglo VIII. Presentan una serie de erupciones representativas
+         <br>
+         <h3> El monte Fuji durante la prehistoria </h3>
+         Ha habido cuatro erupciones explosivas que se produjeron durante el periodo Jomon, hace aproximadamente 3000 años, conocidas bajo los nombres: Sengoku (Sg), Ōsawa scoria (Hueso), Ōmuro scoria (Olmo) y Sunazawa scoria (Zn). Cómo el viento sopla generalmente del oeste, en la región del monte Fuji, la mayoría de las tefras expulsadas cayeron en el este pero, en el caso del Ōsawa scoria, fueron llevadas por un viento del este hacia los alrededores de Hamamatsu.
+
+Hace aproximadamente 2.300 años, la vertiente oriental del volcán se derrumbó y un lahar bajó hacia la región de Gotenba hasta el valle de Ashigara al este y la bahía de Suruga a través de la ciudad de Mishima al sur. Este incidente es conocido en la actualidad como la corriente de lava de Gotenba (御殿場泥流, Gotemba deiryū).
+         <p></p>
+         <h3> La erupción de Heian </h3>
+         En el año 864 (durante el periodo Heian), una erupción se desarrolló sobre el vertiente nordeste del monte Fuji que produjo una gran cantidad de lava. La lava llenó el vasto lago Senoumi (せの海, Se no umi), dividiéndolo en dos y formando los actuales lago Sai (西湖, Saiko) y lago Shoji (精進湖, Shōjiko). Este acontecimiento se conoce con el nombre de lava de Aokigahara (青木ヶ原溶岩, Aokike gen yōgan), el lugar esta actualmente cubierto por el denso bosque de Aokigahara.
+         <p></p>
+         <h3> La erupción de Hōei </h3>
+         La última erupción del monte Fuji, aconteció el 1707, y es conocida bajo el nombre de «gran erupción de Hōei». Aconteció 49 días después del terremoto de Hōei que figura entre los más grandes jamás registrados en Japón, se desarrolló sobre la vertiente suroeste del monte Fuji y ha formado tres pequeños picos designados «primera», «segunda» y «tercera chimenea».
+         <p></p>
+         <h3> Otras erupciones conocidas </h3>
+         Desde el año 781 se han registrado dieciséis erupciones, de las cuales, la mayoría han sido erupciones explosivas peleanas. No ha habido ninguna erupción en los últimos 300 años.
+         <p></p>
+        </div> 
+     </div>
+    <div data-role="collapsible" data-content-theme="false" align="center">
+     <h1> Monitoreo </h1>
+     <p></p>
+     El monte Fuji es un volcán que forma parte del cinturón de fuego del Pacífico, las erupciones explosivas sobre todo lo clasifican como volcán gris.18 El volcán está localizado en la base del triple cruce entre la placa Filipina y las micro-placas Amur y Ojotsk de la placa euroasiática. Estas placas son, respectivamente, las partes occidental y oriental de Japón y la península de Izu. El volcán Fuji constituye el más septentrional de los arcos volcánicos formatos por las islas Izu. Además de la cumbre principal dominada por un cráter, los flancos y los pies del monte Fuji contienen una cincuentena de domos de lava y pequeñas bocas eruptivas.
+     <br>
+Los científicos han identificado cuatro fases diferentes de actividad volcánica en la formación del monte Fuji. La primera fase, denominada Sen-komitake, consiste en un corazón de andesita recientemente descubierta en las profundidades de la montaña. La segunda Komitake Fuji, es una capa de basalto formada probablemente durante centenares de miles de años. Hace aproximadamente 100.000 años, el «Viejo Fuji» se habría formado por encima del Komitake-Fuji. Finalmente, el «Nuevo Fuji» se formó sobre la cumbre del «Viejo Fuji», hace unos 10.000 años.
+El monte Fuji está clasificado como un volcán activo de bajo riesgo. La última erupción registrada empezó 16 de diciembre del 1707 y acabó alrededor del 24 de febrero del 1708, durante el periodo Edo. A veces se denomina "gran erupción Hoei". Durante este acontecimiento, apareció un cráter volcánico, y un segundo pico, denominado Hoei-cen, formado a mitad de pendiente,5 en el costado sudeste de la montaña.18 Los científicos predicen una menor actividad volcánica en los próximos años.
+Se calcula que bajo el monte Fuji hay alrededor de 150 flujos de lava, pero sólo 10 cuevas de lava a pesar de que son de gran magnitud puesto que 8 de ellas superan los 500 metros de longitud. La más grande, la Mitsuke Ana, tiene 2.139,75 metros.
+   </div>
+    </div>
+      <div data-role="collapsible" data-content-theme="false" align="center">
+   <h1> Prevencion </h1>
+   <p></p>
+   La prevención de los riesgos eruptivos está asegurada por el Coordinating Committee fuero Prediction of Volcanic Eruptions dependiente de la Agencia meteorológica del Japón (気象庁, Kishōchō) en lo que concierne la previsión y el control sísmico de los acontecimientos, el Cabinet Office en lo que concierne a la creación de un plan de evacuación y el Ministerio de Tierra, Infraestructura y Transporte (国土交通省,Kokudo-kōtsū-shō) para la protección contra los riesgos de corrimiento de tierras.
+      <br>
+Así, entre septiembre del 2000 y el enero del 2001, las sacudidas telúricas bajo el volcán pasaron de ser una o dos al mes a 35 en septiembre, 133 en octubre, 222 en noviembre, 144 en diciembre y 36 en enero de 2001, haciendo temer lo peor, antes de que todo volviera a la normalidad. Estas sacudidas eran en su mayoría de baja frecuencia y se situaban a quince kilómetros de profundidad, al nordeste de la cumbre
+  </div>
+   </div>
+   
+   <iframe src="visor_monte/index_monte.html" style="width:1026px;height:396px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+   <div data-role="footer" data-theme="a">
+       <h4>Aplicacion Tres, Lozada López Xel-ha</h4>
+   </div>
+ </div>
+</div>
+
+<!-------- Volcan de Hawai -------------->
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Kīlauea</h1>
+   </div>
+   <div data-role="content" align="center">
+      <div>
+       <p>
+        Es un volcán en escudo hiperactivo en Hawái, y el más activo de los cinco volcanes que conforman la isla de Hawái; es también uno de los volcanes más activos de la Tierra.
+        <p></p>
+        <h2> Ubicación</h2>
+       Kīlauea es uno de los cinco volcanes subareales de la isla de Hawái que fueron creados por el punto caliente de Hawái.
+        <p></p>
+        <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image5','','imagenes/220px-Location_Kilauea.svg.png',1)"><img src="imagenes/kv.jpg" width="556" height="508" id="Image5"/></a>
+        <p></p>
+        <h2> Antiguedad </h2>
+        Una edad de 300.000 hasta 600.000 años, emergió del mar hace unos 100.000 años; es el segundo volcán más reciente formado por el punto caliente de Hawái y el actual centro eruptivo de la cadena de montes submarinos Hawái-Emperador.
+        <p></p>
+        <h2> Actividad Volcánica </h2>
+        La historia eruptiva del Kilauea ha sido larga y activa; su nombre significa «escupiendo» o «propagándose mucho» en hawaiano, en referencia a sus frecuentes derramamientos de lava. 
+        <br>
+        Los primeros flujos de lava del volcán se remontan a la etapa de pre escudo submarino, y muestras de sus laderas sumergidas fueron recuperadas por ROV. Otras muestras de lava se recuperaron a través de núcleos de perforación. 
+        <br>
+        El 90 % del volcán está cubierto por lava con una edad de menos de 1000 años; la lava más antigua expuesta en la superficie tiene una edad de 2800 y 2100 años. La primera erupción documentada del Kilauea se produjo en 1823, y desde entonces el volcán entró en erupción en repetidas ocasiones.
+        <p></p>
+        <h2> Monitoreo </h2>
+        No hay cambios significativos en la continua erupción de Kilauea han ocurrido desde la última actualización.
+El lago de lava en la cima de la caldera ha caído otra vez y era cerca de 33 m (108 pies) por debajo del borde del cráter mirador ayer.
+En la zona de rift oriental, los flujos de lava activo recientemente en Puʻu ʻŌʻō cráter ahora eran inactivos. Lava procedentes de la ventilación sigue flujos de lava superficial de flujo en los tubos de alimentación repartido en el de crecimiento lento "27 de junio" campo de lava. Todos los brotes activos permanecen dentro de 6-7 km de distancia y lejos de cualquier comunidades cercanas.
+       </p> 
+       <iframe src="visor_playa/index_playa.html" style="width:1026px;height:396px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>    
+      </div>
+    </div>
+   <div data-role="footer" data-theme="a">
+     <h4>Aplicacion Tres, Lozada López Xel-ha</h4>
+  </div>
+ </div>
+</div>
+
+</body>
+</html>
